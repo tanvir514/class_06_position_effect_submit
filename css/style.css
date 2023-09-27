@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+
+/* font link always on top of css file,
+import click kore "style" tag chara baki tuku nite hobe */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  /* font-family: 'Merriweather', serif; */
+  /* font-family: 'Roboto Condensed', sans-serif; */
+}
+
+img {
+  max-width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.align-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.gap-10 {
+  gap: 10px;
+}
+/* ========== Header Section Start ========== */
+
+header {
+  background-color: #fafafa;
+  background: #120b0b97 url(../images/banner.jpg);
+  min-height: 600px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* flex-wrap: wrap; */
+  /* justify-content: center; */
+}
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+.full-width-container {
+  max-width: 1050px;
+  margin: auto;
+}
+.full-width-class {
+  /* max-width: 91%;
+  flex-basis: 91%; */
+  margin: auto;
+}
+.full-width-class a {
+  width: 176px;
+  text-align: center;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  margin-top: 30px;
+  padding: 15px;
+  margin: 38px auto;
+  border: 1.5px solid #c19d5f;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  transition-duration: 0.3s;
+}
+.full-width-class a:hover {
+  background-color: #c19d5f;
+  color: #fff;
+}
+
+.logo {
+  max-width: 20%;
+  flex-basis: 20%;
+}
+.logo a img {
+  max-width: 180px;
+}
+nav {
+  max-width: 80%;
+  /* width: 100%; */
+  flex-basis: 80%;
+
+  /* width er bodole flex-basis use kora jay,
+  80% width puratai jate pay tai extra vabe flex-basis use kora,
+  max-width & flex-basis duitai barle width barbe, 
+  jekono ekta barle width barbe na, max-width na diyeo only flex-basis deya jay 
+  flex korle tokhon flex-basis use korte hoy*/
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+}
+nav ul li a {
+  color: #e7e2e2;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 9px 8px;
+  display: block;
+  transition-duration: 0.1s;
+  font-family: "Lato", sans-serif;
+  text-transform: none;
+}
+/* anchor tag block element noy,
+  tai padding debar pore display: block kore deya hoise,
+  ete kore valo vabe kaj korbe */
+
+nav ul li a:hover {
+  color: #c19d5f;
+  transform: scale(1.1);
+
+  /* Hover transition duration jodi only :hover e deya hoy,
+  taile menu theke mouse sorale effect hobe na, only mouse rakhle effect hobe,
+  tai main "a" tag e transition-duration deya hoise, jate mouse rakhle & sorale
+  both time transition - duration ta hoy*/
+}
+
+/* ========== Hero Banner Section ========== */
+
+.hero-content h1 {
+  font-size: 70px;
+  color: #fff;
+  line-height: 75px;
+  font-weight: 900;
+  text-align: center;
+  font-family: "Merriweather", serif;
+}
+.hero-content h4 {
+  font-size: 30px;
+  color: #c19d5f;
+  margin-top: 20px;
+  text-align: center;
+  font-family: "Merriweather", serif;
+}
+
+.hero-content p {
+  color: #fff;
+  font-size: 18px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+/* ========== Food Section ========== */
+.food-section {
+  background-color: #f2eee8;
+}
+.col_1_3 {
+  flex-basis: 33.33%;
+  padding: 15px;
+}
+
+/* ========== Gallery Section ========== */
+
+.gallery-section {
+  padding: 50px 0;
+}
+.gallery-image {
+  flex-basis: 33.33%;
+  padding: 8px;
+}
+.gallery-image img {
+  /* height: 100%; */
+  width: 100%;
+  /* aspect-ratio: 1; */
+  aspect-ratio: 6/7;
+  object-fit: cover;
+
+  display: block;
+  border-radius: 12px;
+
+  /***** [image fitting uporer 3ta diye kora jay, abar nicher 3ta diyeo kora jay] *****/
+
+  /* height: 350px;
+  object-fit: cover;
+  object-position: right; */
+
+  /* object fit: cover dile sob img ratio thik thake,  */
+  /* object position: er onek gula option ase, jeta valo fit hoy, */
+
+  /***** display: block --> by default image er bottom e ekta space pay,
+  eta remove korte display: block korte hoy *****/
+}
+
+/* ====== Transform & Effect Section ====== */
+
+.col_1_2 {
+  flex-basis: 33.33%;
+  padding: 15px;
+}
+
+.hover-image {
+  /* background-color: deepskyblue; */
+  position: relative;
+}
+
+.hover-image img {
+  display: block;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.hover-image .hover-content {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  /* div block element hisebe kaj kortese na, tai width dite hobe  */
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  /* ============= */
+  height: 100%;
+  align-items: flex-end;
+  transition-duration: 0.4s;
+  z-index: 1;
+}
+
+.hover-image h2 {
+  font-size: 20px;
+  left: 20px;
+  /* text-align: center; */
+  color: #fff;
+  opacity: 0;
+  transition-duration: 0.4s;
+  transform: translateY(20px);
+
+  /* delay the transition for h2  */
+  transition-delay: 0.2s;
+}
+.hover-image:hover h2 {
+  opacity: 1;
+  transform: translateY(0);
+  /* bottom: 20px; */
+}
+
+/* transform: translate(50%, 50%);  */
+/*** (X axis, Y axis) ***/
+
+/* transform: translateX(50px); */
+/* translate = move kore (x axis / y axis) 
+  but, eta nijer jayga dhore rekhe move kore*/
+
+/* position: absolute korle item nijer jayga chere dibe;
+  position: relative korle sei jaygay item ke thakte deya,
+  position absolute korle tar PARENT ke RELATIVE korte hobe MUST; */
+
+.hover-image a {
+  /* right: 20px; */
+  /* bottom: 10px; */
+  color: #fff;
+  font-size: 30px;
+  transition-duration: 0.4s;
+  transform: translateX(-20px);
+  opacity: 0;
+
+  /* delay the transition for a tag  */
+  transition-delay: 0.2s;
+}
+
+.hover-image:hover a {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.overlay-class {
+  height: 100%;
+  position: absolute;
+  /* hover-image er full height pabar jonne position absolute korsi */
+  width: 100%;
+  bottom: 0;
+  opacity: 0;
+  transform: scale(0.8);
+
+  transition-duration: 0.4s;
+  background-image: linear-gradient(
+    to bottom,
+    #1446c6a5,
+    #0084ffa4,
+    #00b1f2ae,
+    #00d6a073,
+    #10f21f8c
+  );
+}
+
+.hover-image:hover .overlay-class {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.hover-image1 {
+  position: relative;
+}
+
+.hover-image1 img {
+  display: block;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.hover-image1::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transition-duration: 0.4s;
+  /* background: black; */
+  /* transform: scale(0.8); */
+  box-shadow: inset -50px 0px 0px -50px #00ff76,
+    inset 50px 0px 0px -50px #6700ff, inset 0px -50px 0px -50px #00ff76,
+    inset 0px 50px 0px -50px #6700ff;
+  /* box-shadow: inset 0 0 300px 0px #000;
+  (this is useful for dark shadow inside a box) */
+}
+
+.hover-image1:hover::before {
+  /* transform: scale(1); */
+  box-shadow: inset -50px 0px 40px -50px #00ff76,
+    inset 50px 0px 40px -50px #6700ff, inset 0px -50px 40px -50px #00ff76,
+    inset 0px 50px 40px -50px #6700ff;
+}
