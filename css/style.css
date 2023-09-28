@@ -163,7 +163,64 @@ nav ul li a:hover {
   margin-top: 15px;
   text-align: center;
 }
+/* ========== About Us Section ==========  */
+.about-us {
+  background-color: #fff;
+  padding: 35px 0;
+}
+.about-us img {
+  display: block;
+  aspect-ratio: 6/4;
+  object-fit: cover;
+}
+.about_1_2 {
+  flex-basis: 50%;
+  padding: 15px;
+}
+.text-info h4 {
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.text-info h2 {
+  font-size: 54px;
+  font-weight: 700;
 
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Poppins", serif;
+}
+.text-info h6 {
+  font-size: 23px;
+  font-family: "Merriweather", serif;
+  margin-bottom: 29px;
+  font-weight: 400;
+  margin-top: 24px;
+}
+.text-info p {
+  font-size: 14px;
+  font-family: "poppins", serif;
+}
+/* ================================= */
+.cheff-recommendation {
+  text-align: center;
+  padding: 50px 0 25px 0;
+}
+.cheff-recommendation h3 {
+  font-family: "Merriweather", serif;
+  font-size: 40px;
+  margin: 10px 0 15px 0;
+}
+.cheff-recommendation p {
+  color: #af8d54;
+  font-size: 21px;
+  text-transform: uppercase;
+}
+.cheff-recommendation .icon {
+  font-size: 27px;
+  color: #d8ab5d;
+}
 /* ========== Food Section ========== */
 .food-section {
   background-color: #f2eee8;
@@ -171,6 +228,52 @@ nav ul li a:hover {
 .col_1_3 {
   flex-basis: 33.33%;
   padding: 15px;
+}
+.food-image img {
+  display: block;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+}
+.food-image {
+  position: relative;
+}
+.food-image h2 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  opacity: 1;
+  font-family: "Merriweather", serif;
+  text-align: center;
+  transform: translate(50%, 257%);
+  transition-duration: 0.3s;
+}
+.food-image:hover h2 {
+  transform: translate(50%, 50%);
+  font-size: 21px;
+  opacity: 1;
+}
+.food-image p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 10px;
+  opacity: 0;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  transform: translate(50%, 257%);
+  transition-duration: 0.3s;
+}
+.food-image:hover p {
+  transform: translate(50%, 50%);
+  opacity: 1;
+  background-color: #201f1fb9;
+}
+
+.food-image .hover-food-content {
+  position: absolute;
+  bottom: 18%;
+  right: 50%;
+  padding: 5px;
 }
 
 /* ========== Gallery Section ========== */
